@@ -37,7 +37,7 @@ public class SecurityConfig {
                 .formLogin()
                 .loginPage("/auth/login") // Custom login page
                 .permitAll()
-                .defaultSuccessUrl("/auth/user-details", true) // Redirect to user details page after login
+                .defaultSuccessUrl("/plant/identify", true) // Redirect to user details page after login
                 .and()
                 .logout()
                 .logoutUrl("/auth/logout") // Set the logout URL

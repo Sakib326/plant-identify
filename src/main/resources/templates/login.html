@@ -219,6 +219,9 @@
             <input type="password" id="password" name="password" required />
             <i class="fas fa-eye-slash"></i>
           </div>
+          <p th:if="${param.error}" style="color: red">
+            Invalid username or password.
+          </p>
 
           <button type="submit">
             <i class="fas fa-sign-in-alt"></i> Login
